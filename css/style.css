@@ -19,6 +19,7 @@
 
 body {
     height: 100vh;
+    font-family: "Roboto", sans-serif;
 }
 
 /* ----------
@@ -40,6 +41,7 @@ header {
 .header-top, .header-bottom {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .img-header {
@@ -50,7 +52,8 @@ header {
 
 .logo-big {
     display: none;
-    width: 40%;
+    width: 80%;
+    height: 80%;
 }
 
 .fa-plus {
@@ -63,6 +66,10 @@ header {
 header p, header hr {
     color: #fff;
     opacity: 0.5;
+}
+
+header hr {
+    width: 100%;
 }
 
 .menù {
@@ -82,6 +89,10 @@ header p, header hr {
 
 .playlist p {
     padding: .625rem 0;
+}
+
+#download {
+    font-size: .75rem;
 }
 
 /* ----------
@@ -111,7 +122,7 @@ footer {
 
 @media screen and (max-width: 576px) {
 
-    header p {
+    header p, h3, .fa-plus, hr {
         display: none;
     }
 
@@ -131,6 +142,11 @@ footer {
     
     .logo-big {
         display: block;
+        padding: .9375rem 0;
+    }
+
+    .header-top, .header-bottom {
+        align-items: flex-start;
     }
 
 }
