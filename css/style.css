@@ -1,0 +1,56 @@
+/* ----------
+    RESET
+---------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------
+    GENERAL
+---------- */
+
+.header-main-flex {
+    display: flex;
+    height: calc(100% - 5.625rem);
+}
+
+body {
+    height: 100vh;
+}
+
+/* ----------
+    HEADER
+---------- */
+
+header {
+    background-color: blueviolet;
+    width: 3.125rem;
+    flex-shrink: 0;
+}
+
+/* ----------
+    MAIN
+---------- */
+
+main {
+    background-color: lightcoral;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+/* ----------
+    FOOTER
+---------- */
+
+footer {
+    background-color: brown;
+    height: 5.625rem;
+}
+
+/* ----------------------------
+    RESPONSIVE - MOBILE FIRST
+----------------------------- */
+
