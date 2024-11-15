@@ -48,12 +48,28 @@ h4 {
 .btn {
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 
 .playlist-btn {
     display: flex;
     align-items: center;
     font-size: 1.375rem;
+}
+
+.btn-upgrade {
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 1.25rem;
+    padding: .9375rem 2.1875rem;
+    text-align: right;
+    margin-right: 1.25rem;
+}
+
+.btn-upgrade:hover {
+    font-size: 1rem;
+    padding: 1.125rem 2.375rem;
+    margin-right: .75rem;
 }
 
 /* ----------
@@ -169,6 +185,18 @@ header .btn:hover {
 main {
     overflow-y: auto;
     flex-grow: 1;
+}
+
+.upgrade {
+    height: 5.625rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #080b12;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 /* ----------
