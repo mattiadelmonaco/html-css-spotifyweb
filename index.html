@@ -27,41 +27,45 @@
         <!-- HEADER -->
         <header>
             <div class="header-top">
-                <img class="img-header logo-small" src="img/logo-small.svg" alt="logo piccolo Spotify">
-                <img class="img-header logo-big" src="img/logo.svg" alt="logo grande Spotify">
-                <div class="menù"><img class="img-header" src="img/home.svg" alt="tasto home">
-                    <p>Home</p>
+                <div>
+                <a href="#"><img class="logo-small" src="img/logo-small.svg" alt="logo piccolo Spotify"></a>
+                <a href=" à"><img class="logo-big" src="img/logo.svg" alt="logo grande Spotify"></a>
                 </div>
-                <div class="menù"><img class="img-header" src="img/search.svg" alt="tasto cerca">
-                    <p>Cerca</p>
-                </div>
-                <div class="menù"><img class="img-header" src="img/libreria.svg" alt="tasto libreria">
-                    <p>La tua libreria</p>
-                </div>
-
+                <nav class="header-top-nav">
+                    <ul>
+                        <li><img class="img-header" src="img/home.svg" alt="tasto home"><div class="hidden">Home</div></li>
+                        <li><img class="img-header" src="img/search.svg" alt="tasto cerca"><div class="hidden">Cerca</div></li>
+                        <li><img class="img-header" src="img/libreria.svg" alt="tasto libreria"><div class="hidden">La tua libreria</div></li>
+                    </ul>
+            </nav>
                 <div class="playlist">
                     <h4>PLAYLIST</h4>
-                    <div class="menù"><i class="fa-solid fa-plus"></i>
-                        <p>Crea Playlist</p>
-                    </div>
-                    <p>Nome Playlist</p>
-                    <p>Nome Playlist</p>
-                    <p>Nome Playlist</p>
-                    <p>Nome Playlist</p>
-                    <p>Nome Playlist</p>
-                    <p>Nome Playlist</p>
-                    <p>Nome Playlist</p>
+                    <button class="btn"><i class="fa-solid fa-plus"></i>Crea Playlist</button>
+                    <nav>
+                    <ul>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    <li>Nome Playlist</li>
+                    </ul>
+                </nav>
                 </div>
             </div>
             <div class="header-bottom">
-                <div id="download" class="menù"><img class="img-header" src="img/download.svg" alt="tasto download">
-                    <p>Installa app</p>
-                </div>
+                <nav class="header-bottom-nav">
+                    <ul>
+                <li id="download"><img class="img-header" src="img/download.svg" alt="tasto download">
+                    <div class="hidden">Installa app</div>
+                </li>
                 <hr>
-                <div class="menù"><img id="profile" class="img-header" src="img/profile.svg"
-                        alt="tasto profilo personale">
-                    <p><strong>John Doe</strong></p>
-                </div>
+                <li><img id="profile" class="img-header" src="img/profile.svg"
+                        alt="tasto profilo personale"><div class="hidden"><strong> John Doe</strong></div>
+                </li>
+            </ul>
+            </nav>
             </div>
         </header>
         <!-- /HEADER -->
