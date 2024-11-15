@@ -68,6 +68,7 @@ h4 {
     color: #fff;
     padding-top: .9375rem;
     padding-bottom: .625rem;
+    font-size: 1.625rem;
 }
 
 /* ----------
@@ -259,6 +260,7 @@ main {
 
 .album-info p {
     color: #7a7d81;
+    font-size: 1.25rem;
 }
 
 .col img {
@@ -281,7 +283,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     opacity: 0;
     transition: 0.3s opacity;
 }
@@ -289,6 +290,23 @@ main {
 .album .img-overlay:hover {
     opacity: 1;
     cursor: pointer;
+}
+
+.creato-per-john-doe p,
+.most-popular p {
+    color: #7a7d81;
+    padding-left: .625rem;
+    padding-bottom: 22px;
+}
+
+.creato-per-john-doe h2,
+.most-popular h2 {
+    padding-bottom: .5rem;
+}
+
+.most-popular .album {
+    border-radius: 100%;
+    overflow: hidden;
 }
 
 /* ----------
