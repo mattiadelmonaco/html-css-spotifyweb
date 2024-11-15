@@ -31,14 +31,43 @@ ul {
     display: none;
 }
 
+.padding-25 {
+    padding: 0 1.5625rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    padding: .625rem;
+    align-items: center;
+    max-width: calc(100% / 2);
+}
+
 /* --------------
     TYPOGRAPHY
 --------------- */
 
-h4 {
+h3 {
     color: #fff;
     margin: 1.25rem 0;
     font-size: 1.125rem;
+}
+
+h2 {
+    color: #fff;
+    padding: 1.25rem .625rem;
+    font-size: 1.875rem;
+}
+
+h4 {
+    color: #fff;
+    padding-top: .9375rem;
+    padding-bottom: .625rem;
 }
 
 /* ----------
@@ -197,6 +226,49 @@ main {
     padding-right: 1.25rem;
 }
 
+.explore-nav {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0.5;
+    gap: 1.5625rem;
+    padding: 1.25rem 1.25rem;
+    flex-wrap: wrap;
+}
+
+.explore-nav li:nth-child(1) {
+    border-bottom: .25rem solid #adff2f;
+}
+
+.album-info {
+    text-align: center;
+}
+
+.album-info p {
+    color: #7a7d81;
+}
+
+.col img {
+    max-width: 100%;
+}
+
+.album {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.fa-circle-play {
+    color: #fff;
+    font-size: 3.125rem;
+    padding: 2.5rem;
+    background-color: red;
+    position: absolute;
+    bottom: 3.125rem;
+    left: 3.125rem;
+}
+
 /* ----------
     FOOTER
 ---------- */
@@ -215,7 +287,7 @@ footer {
 @media screen and (max-width: 576px) {
 
     .playlist,
-    h4,
+    h3,
     .fa-plus,
     hr {
         display: none;
@@ -274,4 +346,20 @@ footer {
 
 /* TABLET 768px to 1200 */
 
+@media screen and (min-width: 768px) {
+
+    .col {
+        max-width: calc(100% / 4);
+    }
+
+}
+
 /* DESKTOP >= 1200px */
+
+@media screen and (min-width: 1200px) {
+
+    .col {
+        max-width: calc(100% / 6);
+    }
+
+}
