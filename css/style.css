@@ -68,7 +68,11 @@ h4 {
     color: #fff;
     padding-top: .9375rem;
     padding-bottom: .625rem;
-    font-size: 1.625rem;
+}
+
+h5 {
+    font-size: 1rem;
+    color: #fff;
 }
 
 /* ----------
@@ -260,7 +264,6 @@ main {
 
 .album-info p {
     color: #7a7d81;
-    font-size: 1.25rem;
 }
 
 .col img {
@@ -316,15 +319,59 @@ main {
 footer {
     background-color: #282828;
     height: 5.625rem;
+    padding: 1.25rem .625rem;
+    display: flex;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-left img {
+    max-height: 100%;
+}
+
+.name-album, .like-album {
+    display: flex;
+    flex-direction: column;
+    padding: 0 .9375rem;
+}
+
+.like-album {
+    font-size: 1.375rem;
+    gap: .375rem;
+}
+
+.name-music {
+    width: 80%;
+}
+
+.footer-left .name-music, i {
+    color: #fff;
+    opacity: 0.5;
+    transition: 0.3s opacity;
+}
+
+.footer-left .name-music:hover {
+    opacity: 1;
+    cursor: pointer;
+    text-decoration: underline .125rem solid;
+}
+
+.footer-left i:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 /* ----------------------------
     RESPONSIVE - MOBILE FIRST
 ----------------------------- */
 
-/* MOBILE <= 480px to 576px */
+/* MOBILE <= 480px */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 480px) {
 
     .playlist,
     h3,
@@ -339,9 +386,9 @@ footer {
 
 }
 
-/* LARGE MOBILE 576px to 768px */
+/* LARGE MOBILE 480px to 576px */
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 481px) {
 
     header {
         width: 14.375rem;
@@ -382,9 +429,13 @@ footer {
         padding-left: .375rem;
     }
 
+    .name-music {
+        width: 100%;
+    }
+
 }
 
-/* TABLET 768px to 1200 */
+/* TABLET 576px to 768px */
 
 @media screen and (min-width: 768px) {
 
@@ -392,9 +443,16 @@ footer {
         max-width: calc(100% / 4);
     }
 
+    .like-album {
+        display: flex;
+        flex-direction: row;
+        padding-left: 1.875rem;
+        gap: .9375rem;
+    }
+
 }
 
-/* DESKTOP >= 1200px */
+/* DESKTOP 768px to >= 1200px */
 
 @media screen and (min-width: 1200px) {
 
