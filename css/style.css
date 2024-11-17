@@ -31,6 +31,14 @@ ul {
     display: none;
 }
 
+.padding-10 {
+    padding: 0 .625rem;
+}
+
+.padding-20 {
+    padding: 0 1.25rem;
+}
+
 .padding-25 {
     padding: 0 1.5625rem;
 }
@@ -255,7 +263,16 @@ main {
 }
 
 .explore-nav li:nth-child(1) {
-    border-bottom: .25rem solid #adff2f;
+    position: relative;
+}
+
+.nav-bar {
+    background-color: #adff2f;
+    height: .3125rem;
+    width: 2.5rem;
+    position: absolute;
+    bottom: -40%;
+    left: 30%;
 }
 
 .album-info {
@@ -331,6 +348,7 @@ footer {
     display: flex;
     align-items: center;
     height: 100%;
+    width: 30%;
 }
 
 .footer-left img {
@@ -369,13 +387,85 @@ footer {
     cursor: pointer;
 }
 
+/* FOOTER CENTER */
+
+.footer-center {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-buttons {
+    color: #fff;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 1.25rem;
+}
+
+.footer-center .fa-circle-play {
+    font-size: 1.875rem;
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.footer-center .fa-circle-play:hover {
+    transform: scale(1.2);
+}
+
+.duration-bar {
+    height: .375rem;
+    width: 70%;
+    background-color: #5a5a5a;
+    border-radius: .625rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.duration-indicator {
+    opacity: 0;
+    transition: 0.3s opacity;
+}
+
+.duration-indicator:hover {
+    opacity: 1;
+}
+
+.duration-bar-hover hr {
+    height: .375rem;
+    width: 18%;
+    border-radius: .625rem;
+    background-color: #adff2f;
+    border: none;
+    position: relative;
+}
+
+.duration {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.duration p {
+    color: #fff;
+}
+
 /* FOOTER RIGHT */
 
 .footer-right {
     display: flex;
     align-items: center;
     height: 100%;
-    font-size: 1.375rem;   
+    font-size: 1.375rem;
+    width: 30%;
+    justify-content: flex-end;
 }
 
 .footer-right-icons i {
@@ -386,7 +476,7 @@ footer {
 
 .volume-bar {
     height: .375rem;
-    width: 6.25rem;
+    width: 40%;
     background-color: #5a5a5a;
     border-radius: .625rem;
     position: relative;
@@ -397,12 +487,11 @@ footer {
 
 .volume-bar-hover hr {
     height: .375rem;
-    width: 25%;
+    width: 20%;
     border-radius: .625rem;
     background-color: #adff2f;
     border: none;
     position: relative;
-    opacity: 0;
 }
 
 .circle {
@@ -412,11 +501,15 @@ footer {
     width: .875rem;
     position: absolute;
     bottom: -0.25rem;
-    left: 1rem;
-    opacity: 0;
+    left: 16%;
 }
 
-.volume-bar-hover hr:hover, .circle:hover {
+.volume-indicator {
+    opacity: 0;
+    transition: 0.3s opacity;
+}
+
+.volume-indicator:hover {
     opacity: 1;
 }
 
