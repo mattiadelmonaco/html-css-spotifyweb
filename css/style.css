@@ -56,6 +56,24 @@ ul {
     max-width: calc(100% / 2);
 }
 
+::-webkit-scrollbar {
+    width: .75rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #080A0E;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-top-left-radius: .625rem;
+    border-bottom-left-radius: .625rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #727272;
+}
+
 /* --------------
     TYPOGRAPHY
 --------------- */
@@ -128,7 +146,6 @@ header {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    font-size: 1.375rem;
     overflow-y: auto;
 }
 
@@ -185,7 +202,7 @@ header li {
     align-items: center;
     padding: .125rem 0;
     transition: 0.3s opacity;
-    font-size: clamp(1rem, 2vw, 1.125rem);
+    font-size: clamp(1.125rem, 2vw, 1.25rem);
 }
 
 #profile {
@@ -202,7 +219,7 @@ header li {
     text-decoration: none;
     display: flex;
     align-items: center;
-    font-size: clamp(.75rem, 2vw, 14px);
+    font-size: clamp(.875rem, 2vw, 1rem);
 }
 
 .header-bottom #download img {
@@ -221,7 +238,7 @@ header .btn:hover {
     display: flex;
     align-items: center;
     color: #fff;
-    font-size: clamp(1rem, 2vw, 1.125rem);
+    font-size: clamp(1.125rem, 2vw, 1.25rem);
 }
 
 .header-top-nav li:nth-child(1) {
@@ -230,6 +247,13 @@ header .btn:hover {
 
 .header-bottom-nav li:last-child {
     opacity: 1;
+}
+
+.line {
+    background-color: #fff;
+    opacity: 0.5;
+    height: .0625rem;
+    width: 10.625rem;
 }
 
 /* ----------
@@ -246,7 +270,7 @@ main {
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 100;
     background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: flex-end;
@@ -563,14 +587,6 @@ footer {
     opacity: 1;
 }
 
-.line {
-    background-color: #fff;
-    opacity: 0.5;
-    height: .0625rem;
-    width: 10rem;
-}
-
-
 /* ----------------------------
     RESPONSIVE - MOBILE FIRST
 ----------------------------- */
@@ -596,7 +612,7 @@ footer {
 @media screen and (min-width: 481px) {
 
     header {
-        width: 11.25rem;
+        width: 12.5rem;
     }
 
     .logo-small {
