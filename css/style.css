@@ -60,16 +60,16 @@ ul {
     TYPOGRAPHY
 --------------- */
 
-h3 {
-    color: #fff;
-    margin: 1.25rem 0;
-    font-size: 1.125rem;
-}
-
 h2 {
     color: #fff;
     padding: .9375rem .625rem;
     font-size: clamp(1.25rem, 2vw, 1.875rem);
+}
+
+h3 {
+    color: #fff;
+    margin: 1.25rem 0;
+    font-size: 1.125rem;
 }
 
 h4 {
@@ -98,7 +98,7 @@ h5 {
 .playlist-btn {
     display: flex;
     align-items: center;
-    font-size: 1.375rem;
+    font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
 .btn-upgrade {
@@ -147,11 +147,13 @@ header {
 
 .logo-small {
     width: 100%;
+    padding: .3125rem 0;
 }
 
 .logo-big {
     display: none;
-    width: 100%;
+    width: 90%;
+    padding: .9375rem 0;
 }
 
 .playlist {
@@ -161,20 +163,15 @@ header {
 .fa-plus {
     background-color: #fff;
     color: #000;
-    padding: .625rem;
+    padding: .5rem;
     margin-right: .25rem;
 }
 
-header hr,
 .header-top li,
 .header-bottom li,
 .playlist .btn {
     color: #fff;
     opacity: 0.5;
-}
-
-header hr {
-    width: 100%;
 }
 
 .playlist ul {
@@ -186,8 +183,9 @@ header hr {
 header li {
     display: flex;
     align-items: center;
-    padding: .625rem 0;
-    transition: 0.3s opacity
+    padding: .125rem 0;
+    transition: 0.3s opacity;
+    font-size: clamp(1rem, 2vw, 1.125rem);
 }
 
 #profile {
@@ -199,8 +197,12 @@ header li {
     padding: .625rem 0;
 }
 
-#download {
-    font-size: .75rem;
+#download a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: clamp(.75rem, 2vw, 14px);
 }
 
 .header-bottom #download img {
@@ -212,6 +214,14 @@ header li:hover,
 header .btn:hover {
     opacity: 1;
     cursor: pointer;
+}
+
+.header-top-nav a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: clamp(1rem, 2vw, 1.125rem);
 }
 
 .header-top-nav li:nth-child(1) {
@@ -237,7 +247,7 @@ main {
     top: 0;
     left: 0;
     z-index: 10;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -370,7 +380,8 @@ footer {
     font-size: clamp(.75rem, 2vw, 1.375rem);
 }
 
-.name-album, .like-album {
+.name-album,
+.like-album {
     display: flex;
     flex-direction: column;
 }
@@ -379,7 +390,8 @@ footer {
     font-size: clamp(.625rem, 2vw, 1rem);
 }
 
-.footer-left .name-music, .footer-left i {
+.footer-left .name-music,
+.footer-left i {
     color: #fff;
     opacity: 0.5;
     transition: 0.3s opacity;
@@ -551,6 +563,13 @@ footer {
     opacity: 1;
 }
 
+.line {
+    background-color: #fff;
+    opacity: 0.5;
+    height: .0625rem;
+    width: 10rem;
+}
+
 
 /* ----------------------------
     RESPONSIVE - MOBILE FIRST
@@ -562,8 +581,7 @@ footer {
 
     .playlist,
     h3,
-    .fa-plus,
-    .header-bottom hr {
+    .fa-plus {
         display: none;
     }
 
@@ -578,7 +596,7 @@ footer {
 @media screen and (min-width: 481px) {
 
     header {
-        width: 14.375rem;
+        width: 11.25rem;
     }
 
     .logo-small {
@@ -587,7 +605,6 @@ footer {
 
     .logo-big {
         display: block;
-        padding: .9375rem 0;
     }
 
     .header-top,
