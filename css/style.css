@@ -68,14 +68,15 @@ h3 {
 
 h2 {
     color: #fff;
-    padding: 1.25rem .625rem;
-    font-size: 1.875rem;
+    padding: .9375rem .625rem;
+    font-size: clamp(1.25rem, 2vw, 1.875rem);
 }
 
 h4 {
     color: #fff;
     padding-top: .9375rem;
-    padding-bottom: .625rem;
+    padding-bottom: .5rem;
+    font-size: clamp(1.125rem, 2vw, 1.375rem);
 }
 
 h5 {
@@ -104,7 +105,8 @@ h5 {
     color: #fff;
     border: 2px solid #fff;
     border-radius: 1.25rem;
-    padding: .9375rem 2.1875rem;
+    padding: .9375rem 1.5625rem;
+    font-size: clamp(.625rem, 2vw, 1rem);
     transform: scale(1);
     transition: 0.3s;
 }
@@ -235,7 +237,7 @@ main {
     top: 0;
     left: 0;
     z-index: 10;
-    background-color: #080b12;
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -256,6 +258,8 @@ main {
     opacity: 0.5;
     transition: 0.3s opacity;
     text-decoration: none;
+    font-size: clamp(.75rem, 2vw, 1rem);
+    font-weight: 500;
 }
 
 .explore-nav a:hover {
@@ -263,17 +267,13 @@ main {
     cursor: pointer;
 }
 
-.explore-nav a:nth-child(1) {
-    position: relative;
-}
-
-.nav-bar {
+.explore-nav li:nth-child(1)::after {
     background-color: #adff2f;
     height: .3125rem;
     width: 2.5rem;
-    position: absolute;
-    bottom: -40%;
-    left: 30%;
+    content: '';
+    display: block;
+    margin: 0 auto;
 }
 
 .album-info {
@@ -282,6 +282,7 @@ main {
 
 .album-info p {
     color: #7a7d81;
+    font-weight: 600;
 }
 
 .col img {
@@ -318,6 +319,8 @@ main {
     color: #7a7d81;
     padding-left: .625rem;
     padding-bottom: 22px;
+    font-weight: 600;
+    font-size: clamp(.75rem, 2vw, 1rem);
 }
 
 .creato-per-john-doe h2,
