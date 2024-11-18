@@ -31,12 +31,12 @@ ul {
     display: none;
 }
 
-.padding-10 {
-    padding: 0 .625rem;
+.padding-5 {
+    padding: 0 .3125rem;
 }
 
-.padding-20 {
-    padding: 0 1.25rem;
+.padding-10 {
+    padding: 0 .625rem;
 }
 
 .padding-25 {
@@ -79,7 +79,7 @@ h4 {
 }
 
 h5 {
-    font-size: 1rem;
+    font-size: clamp(.75rem, 2vw, 1.375rem);
     color: #fff;
 }
 
@@ -350,25 +350,30 @@ footer {
     align-items: center;
     height: 100%;
     width: 30%;
+    margin-right: 1.125rem;
 }
 
 .footer-left img {
-    max-height: 100%;
+    max-height: 85%;
+}
+
+.name-album {
+    padding-left: .5rem;
+}
+
+.like-album {
+    gap: .375rem;
+    padding-left: .5rem;
+    font-size: clamp(.75rem, 2vw, 1.375rem);
 }
 
 .name-album, .like-album {
     display: flex;
     flex-direction: column;
-    padding: 0 .9375rem;
 }
 
-.like-album {
-    font-size: 1.375rem;
-    gap: .375rem;
-}
-
-.name-music {
-    width: 80%;
+.name-music p {
+    font-size: clamp(.625rem, 2vw, 1rem);
 }
 
 .footer-left .name-music, .footer-left i {
@@ -400,17 +405,24 @@ footer {
 
 .player-buttons {
     color: #fff;
-    font-size: 1.25rem;
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding-bottom: 1.25rem;
+    padding-bottom: .625rem;
+    font-size: clamp(1rem, 2vw, 1.625rem);
+}
+
+.player-buttons i {
+    padding-left: clamp(.3125rem, 2vw, .9375rem);
+    padding-right: clamp(.3125rem, 2vw, .9375rem);
 }
 
 .footer-center .fa-circle-play {
-    font-size: 1.875rem;
+    font-size: clamp(1.5rem, 2vw, 2.1875rem);
     transform: scale(1);
     transition: 0.3s;
+    padding-left: clamp(.4375rem, 2vw, 1.25rem);
+    padding-right: clamp(.4375rem, 2vw, 1.25rem);
 }
 
 .footer-center .fa-circle-play:hover {
@@ -419,7 +431,7 @@ footer {
 
 .duration-bar {
     height: .375rem;
-    width: 70%;
+    width: 80%;
     background-color: #5a5a5a;
     border-radius: .625rem;
     position: relative;
@@ -433,29 +445,42 @@ footer {
     transition: 0.3s opacity;
 }
 
-.duration-indicator:hover {
+.duration-bar:hover .duration-indicator {
     opacity: 1;
 }
 
-.duration-bar-hover hr {
+.duration-bar-hover {
     height: .375rem;
-    width: 18%;
+    width: 20%;
     border-radius: .625rem;
     background-color: #adff2f;
     border: none;
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.duration-indicator .circle {
+    background-color: #fff;
+    border-radius: 100%;
+    height: .875rem;
+    width: .875rem;
+    position: absolute;
+    bottom: -0.25rem;
+    left: 19%;
 }
 
 .duration {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: .625rem;
 }
 
 .duration p {
     color: #fff;
+    font-size: clamp(12px, 2vw, 1rem);
 }
 
 /* FOOTER RIGHT */
@@ -464,38 +489,47 @@ footer {
     display: flex;
     align-items: center;
     height: 100%;
-    font-size: 1.375rem;
     width: 30%;
     justify-content: flex-end;
+    gap: .3125rem;
+    margin-left: 1.125rem;
 }
 
 .footer-right-icons i {
-    padding: 0 .375rem;
+    padding-right: .3125rem;
     color: #fff;
     cursor: pointer;
+    font-size: clamp(.75rem, 2vw, 1.375rem);
 }
 
 .volume-bar {
     height: .375rem;
-    width: 40%;
+    min-width: 40%;
     background-color: #5a5a5a;
     border-radius: .625rem;
     position: relative;
-    top: 0;
-    left: 0;
     cursor: pointer;
 }
 
-.volume-bar-hover hr {
+.progress {
+    height: .375rem;
+    width: 20%;
+    border-radius: .625rem;
+    background-color: #c1c1c1;
+}
+
+.volume-bar-hover {
     height: .375rem;
     width: 20%;
     border-radius: .625rem;
     background-color: #adff2f;
     border: none;
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
-.circle {
+.volume-indicator .circle {
     background-color: #fff;
     border-radius: 100%;
     height: .875rem;
@@ -510,7 +544,7 @@ footer {
     transition: 0.3s opacity;
 }
 
-.volume-indicator:hover {
+.volume-bar:hover .volume-indicator {
     opacity: 1;
 }
 
@@ -583,6 +617,10 @@ footer {
         width: 100%;
     }
 
+    .footer-right-icons i {
+        padding: 0 .3125rem;
+    }
+
 }
 
 /* TABLET 576px to 768px */
@@ -596,9 +634,11 @@ footer {
     .like-album {
         display: flex;
         flex-direction: row;
-        padding-left: 1.875rem;
         gap: .9375rem;
+        padding-left: .9375rem;
     }
+
+
 
 }
 
