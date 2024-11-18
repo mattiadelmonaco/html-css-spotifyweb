@@ -19,7 +19,7 @@
 
 body {
     height: 100vh;
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: #141922;
 }
 
@@ -251,18 +251,19 @@ main {
     flex-wrap: wrap;
 }
 
-.explore-nav li {
+.explore-nav a {
     color: #fff;
     opacity: 0.5;
     transition: 0.3s opacity;
+    text-decoration: none;
 }
 
-.explore-nav li:hover {
+.explore-nav a:hover {
     opacity: 1;
     cursor: pointer;
 }
 
-.explore-nav li:nth-child(1) {
+.explore-nav a:nth-child(1) {
     position: relative;
 }
 

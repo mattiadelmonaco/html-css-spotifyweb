@@ -7,11 +7,10 @@
     <title>Spotify</title>
     <link rel="icon" type="image/ico" href="img/favicon.ico">
     <!-- GOOGLE FONTS -->
-    <!-- FONT AWESOME -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <!-- /GOOGLE FONTS -->
     <!-- FONT AWESOME -->
@@ -83,12 +82,24 @@
             </div>
             <nav>
                 <ul class="explore-nav">
-                    <li>in evidenza<div class="nav-bar"></div></li>
-                    <li>podcast</li>
-                    <li>classifiche</li>
-                    <li>generi e mood</li>
-                    <li>nuove uscite</li>
-                    <li>scopri</li>
+                    <li>
+                        <a href="#">in evidenza<div class="nav-bar"></div></a>
+                    </li>
+                    <li>
+                        <a href="#">podcast</a>
+                    </li>
+                    <li>
+                        <a href="#">classifiche</a>
+                    </li>
+                    <li>
+                        <a href="#">generi e mood</a>
+                    </li>
+                    <li>
+                        <a href="#">nuove uscite</a>
+                    </li>
+                    <li>
+                        <a href="#">scopri</a>
+                    </li>
                 </ul>
             </nav>
             <section class="recently-played padding-25">
@@ -208,16 +219,18 @@
     <!-- /CONTENITORE FLEX HEADER E MAIN -->
     <!-- FOOTER -->
     <footer>
-            <div class="footer-left">
-                <img src="img/sinister.jpeg" alt="album in riproduzione sinister">
-                <div class="name-album">
-                    <h5>Sinister</h5>
-                    <div class="name-music"><p>Brano Nome</p></div>   
+        <div class="footer-left">
+            <img src="img/sinister.jpeg" alt="album in riproduzione sinister">
+            <div class="name-album">
+                <h5>Sinister</h5>
+                <div class="name-music">
+                    <p>Brano Nome</p>
                 </div>
-                <div class="like-album"><i class="fa-regular fa-heart"></i><i class="fa-regular fa-folder"></i></div>
             </div>
-            <div class="footer-center">
-                <div class="player-buttons">
+            <div class="like-album"><i class="fa-regular fa-heart"></i><i class="fa-regular fa-folder"></i></div>
+        </div>
+        <div class="footer-center">
+            <div class="player-buttons">
                 <i class="fa-solid fa-shuffle padding-10"></i>
                 <i class="fa-solid fa-backward-step padding-10"></i>
                 <i class="fa-regular fa-circle-play padding-20"></i>
@@ -225,25 +238,30 @@
                 <i class="fa-solid fa-arrow-rotate-right padding-10"></i>
             </div>
             <div class="duration">
-            <p><strong>0:25</strong></p>
-            <div class="duration-bar">
-                <div class="duration-indicator">
-                    <div class="duration-bar-hover"><hr></div>
-                    <div class="circle"></div>
+                <p><strong>0:25</strong></p>
+                <div class="duration-bar">
+                    <div class="duration-indicator">
+                        <div class="duration-bar-hover">
+                            <hr>
+                        </div>
+                        <div class="circle"></div>
+                    </div>
                 </div>
+                <p><strong>4:35</strong></p>
             </div>
-            <p><strong>4:35</strong></p>
         </div>
-            </div>
-            <div class="footer-right">
-                <div class="footer-right-icons"><i class="fa-solid fa-list"></i><i class="fa-solid fa-display"></i><i class="fa-solid fa-volume-high"></i></div>
-                <div class="volume-bar">
-                    <div class="volume-indicator">
-                    <div class="volume-bar-hover"><hr></div>
+        <div class="footer-right">
+            <div class="footer-right-icons"><i class="fa-solid fa-list"></i><i class="fa-solid fa-display"></i><i
+                    class="fa-solid fa-volume-high"></i></div>
+            <div class="volume-bar">
+                <div class="volume-indicator">
+                    <div class="volume-bar-hover">
+                        <hr>
+                    </div>
                     <div class="circle"></div>
                 </div>
-                </div>
             </div>
+        </div>
     </footer>
     <!-- /FOOTER -->
 
