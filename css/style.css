@@ -607,7 +607,7 @@ footer {
 
 }
 
-/* LARGE MOBILE 480px to 576px */
+/* LARGE MOBILE 481px to 768px */
 
 @media screen and (min-width: 481px) {
 
@@ -659,7 +659,7 @@ footer {
 
 }
 
-/* TABLET 576px to 768px */
+/* TABLET 768px to 1200px */
 
 @media screen and (min-width: 768px) {
 
@@ -678,7 +678,7 @@ footer {
 
 }
 
-/* DESKTOP 768px to >= 1200px */
+/* DESKTOP 1200px to >= */
 
 @media screen and (min-width: 1200px) {
 
